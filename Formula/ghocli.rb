@@ -5,21 +5,21 @@
 class Ghocli < Formula
   desc "Ghost Admin API CLI Tool"
   homepage "https://github.com/mtane0412/ghocli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mtane0412/ghocli/releases/download/v0.1.0/ghocli_0.1.0_darwin_x86_64.tar.gz"
-      sha256 "507b1e899977ec3a783248cccff1ce25cd64461fbbf874146198508700fb449f"
+      url "https://github.com/mtane0412/ghocli/releases/download/v0.1.1/ghocli_0.1.1_darwin_x86_64.tar.gz"
+      sha256 "7af1131fa9c9aa985288c23fba29d2e8d93928104c42468dcb7e7d2ab95a210d"
 
       def install
         bin.install "gho"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mtane0412/ghocli/releases/download/v0.1.0/ghocli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "52b22f37efe284b46e5cc80d873b0aa2785f577082eb580f63e9cba5612c96e4"
+      url "https://github.com/mtane0412/ghocli/releases/download/v0.1.1/ghocli_0.1.1_darwin_arm64.tar.gz"
+      sha256 "7dfa3d80ba5d1f0f197cab353347ad29260dfa1b8c9025f578b97a30eaa88992"
 
       def install
         bin.install "gho"
@@ -29,15 +29,15 @@ class Ghocli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mtane0412/ghocli/releases/download/v0.1.0/ghocli_0.1.0_linux_x86_64.tar.gz"
-      sha256 "9fd169bad905f7cf977c358f6a7a50fae3908617c19307354f1ed93777a85d62"
+      url "https://github.com/mtane0412/ghocli/releases/download/v0.1.1/ghocli_0.1.1_linux_x86_64.tar.gz"
+      sha256 "72f84355fd28a815eedc4963386ea554737390fab6df4253b6459ac37bb90bcd"
       def install
         bin.install "gho"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mtane0412/ghocli/releases/download/v0.1.0/ghocli_0.1.0_linux_arm64.tar.gz"
-      sha256 "863434fd37ab4035ebfa6dfebe93c229f250dc2c165628f64934617580cb1165"
+      url "https://github.com/mtane0412/ghocli/releases/download/v0.1.1/ghocli_0.1.1_linux_arm64.tar.gz"
+      sha256 "91d20b2282c5dd27e32069b569073eb98f3301a525931da90bc1fbc9b565da1f"
       def install
         bin.install "gho"
       end
